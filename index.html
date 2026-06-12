@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026</title>
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agroDark: '#064e3b',  /* Verde Escuro */
+                        agroGreen: '#15803d', /* Verde Médio */
+                        agroYellow: '#facc15',/* Amarelo */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Cabeçalho -->
+    <header class="bg-agroDark text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider flex items-center gap-2">
+                <span class="text-agroYellow">🌱</span> Agrinho 2026
+            </h1>
+            <nav class="hidden md:flex gap-6 font-medium text-sm tracking-wide">
+                <a href="#inicio" class="hover:text-agroYellow transition">Início</a>
+                <a href="#sobre" class="hover:text-agroYellow transition">Sobre</a>
+                <a href="#futuro" class="hover:text-agroYellow transition">Sustentabilidade</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Destaque Principal) -->
+    <section id="inicio" class="relative bg-gradient-to-br from-agroDark via-agroGreen to-agroYellow text-white py-20 px-4 flex-grow flex items-center">
+        <div class="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+            <span class="bg-white/20 text-agroYellow text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-sm">
+                Inovação no Campo
+            </span>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+                Agro Forte, <br class="md:hidden"> Futuro Sustentável
+            </h2>
+            <p class="text-lg md:text-xl text-stone-100 max-w-2xl mx-auto font-light leading-relaxed">
+                A força que alimenta o mundo se une à responsabilidade de proteger o amanhã. O Agrinho 2026 celebra a união entre a produtividade do campo e a preservação ambiental.
+            </p>
+            <div class="pt-4">
+                <a href="#sobre" class="bg-agroDark hover:bg-stone-900 text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-block text-sm uppercase tracking-wider">
+                    Conheça o Projeto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Conteúdo (Escopo) -->
+    <section id="sobre" class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <div class="h-1 w-20 bg-agroYellow rounded"></div>
+                <h3 class="text-3xl font-extrabold text-agroDark tracking-tight">
+                    O Equilíbrio Perfeito
+                </h3>
+                <p class="text-stone-600 leading-relaxed">
+                    Um **agro forte** não compete com a natureza; ele prospera através dela. A tecnologia no campo hoje nos permite produzir mais alimentos utilizando menos recursos hídricos, reduzindo a pegada de carbono e protegendo a biodiversidade do nosso solo.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Garantir um **futuro sustentável** é o nosso maior compromisso. Através de práticas agrícolas conscientes, rotação de culturas e reflorestamento, transformamos o campo no principal motor econômico e ecológico do país.
+                </p>
+            </div>
+            
+            <!-- Cards de Destaque -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 bg-stone-50 border-l-4 border-agroGreen rounded-r-lg shadow-sm">
+                    <div class="text-2xl mb-2">🚜</div>
+                    <h4 class="font-bold text-agroDark text-lg">Produção Forte</h4>
+                    <p class="text-xs text-stone-500 mt-1">Tecnologia de ponta para alimentar gerações com eficiência absoluta.</p>
+                </div>
+                <div class="p-6 bg-stone-50 border-l-4 border-agroYellow rounded-r-lg shadow-sm">
+                    <div class="text-2xl mb-2">☀️</div>
+                    <h4 class="font-bold text-agroDark text-lg">Energia Limpa</h4>
+                    <p class="text-xs text-stone-500 mt-1">Uso de fontes renováveis e processos ecoeficientes no campo.</p>
+                </div>
+                <div class="p-6 bg-stone-50 border-l-4 border-agroYellow rounded-r-lg shadow-sm">
+                    <div class="text-2xl mb-2">💧</div>
+                    <h4 class="font-bold text-agroDark text-lg">Preservação</h4>
+                    <p class="text-xs text-stone-500 mt-1">Manejo inteligente da água e proteção de nascentes locais.</p>
+                </div>
+                <div class="p-6 bg-stone-50 border-l-4 border-agroGreen rounded-r-lg shadow-sm">
+                    <div class="text-2xl mb-2">🎒</div>
+                    <h4 class="font-bold text-agroDark text-lg">Educação</h4>
+                    <p class="text-xs text-stone-500 mt-1">Formando jovens conscientes para liderar a revolução verde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-stone-900 text-stone-400 py-8 px-4 text-center text-sm border-t border-stone-800 mt-auto">
+        <div class="max-w-6xl mx-auto space-y-2">
+            <p class="font-medium text-stone-300">&copy; 2026 Agrinho. Todos os direitos reservados.</p>
+            <p class="text-xs text-stone-500">Desenvolvido com foco em sustentabilidade, inovação e educação no campo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
